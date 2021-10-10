@@ -1,38 +1,136 @@
+body {
+	font-size: 16px;
+}
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.container-fluid {
+	margin: 0 auto;
+	padding: 0;
+	min-height: 100vh;
+	background: rgb(238, 174, 202);
+	background: radial-gradient(circle, rgb(249 249 249) 0%, #9481b1 100%);
+}
+.container {
+	max-width: 1200px;
+	min-width: 320px;
+	margin: 0 auto;
+	font-family: "Roboto", sans-serif;
+}
+
+.search-field {
+	width: 100%;
+	padding: 13px;
+	font-family: inherit;
+	font-size: 16px;
+	outline: none;
+}
+.search-field:hover,
+.search-field:active {
+	outline: none;
+}
+button.search-btn {
+	position: absolute;
+	background: #6613e7;
+	border: 0;
+	padding: 13.5px;
+	right: -29px;
+	top: 1px;
+	font-size: 17px;
+	color: #fff;
+	font-family: inherit;
+	text-transform: uppercase;
+}
+form {
+	position: relative;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: inherit;
+	text-transform: capitalize;
+	color: #6613e7;
+	padding: 25px 0;
+	font-size: 3em;
+}
+.location {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAABjUlEQVRYw+2XPY7CMBSEPyFCBRKIEkpEwwGghSvkBHCQXCESyiWgTwe0CAm6UOYS0AbYxnjtLPlhF1tIS9w54xk/v7H9DP/ru4n2EbAv0GHGnJ0U2DFnRucV1BVcQhJJrbaEEJfKX+hH7B9Sq23P6HfkVQKuhfQ3blwJqD5L32SVmqfHhB516vSY4KViW9F8hr5FpAxe0H+I6rNQUBGtsvSOMvuYYS52SKxE4ZQTCOSQDe1CdJuNxAflnHOR9E7JiO8Sl2JHVWTy4hKz/44ilmYo2BeutF567Qf4HDlz5ojP4Ecu7pZ28wVCAVtqvTWC1G5OCKhpmKX4E+bRdwXNVTNmjfXDDbbWJPoihoRutsBUDD1kuCrddNccRO+02KCetvZJpkCi5cIrNutWQMZKn597DvkKciz6ttkXyb2pGYhyBSItC+m/mQINZdgpV+CkIBtvJPDyJTKeZGs2Nb7RjB8Vxg87C8e18QvH+JVp4dK3ULYYL7wslI4Wil8L5buVB4iFJ9TnGftuAu/4fQEvspbHqp5iugAAAABJRU5ErkJggg==);
+	position: absolute;
+	top: 14px;
+	right: 82px;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.search-box {
+	padding: 150px 0;
+}
+.search_container {
+	max-width: 767px;
+	margin: auto;
+}
+.search-result {
+	margin: 20px auto;
+}
+
+.city-tempture {
+	width: 351px;
+	font-size: 3em;
+	text-transform: uppercase;
+	color: #6613e7;
+	font-family: inherit;
+	text-align: center;
+	margin: 0 auto;
+}
+.time-diff {
+	font-size: 1em;
+	color: #6613e7;
+	font-family: inherit;
+	text-transform: capitalize;
+	padding: 15px 0;
+	text-align: center;
+}
+.time-diff:before {
+	content: "Time difference with local time is : ";
+}
+h1 span.text-muted {
+	font-size: 14px;
+	display: block;
 }

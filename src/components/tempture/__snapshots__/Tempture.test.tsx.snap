@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`APP Component snapshot 1`] = `
+<div
+  className="search-result"
+>
+  <div
+    className="city-tempture"
+  >
+     
+    <span />
+  </div>
+  <div
+    className="time-diff"
+  />
+</div>
+`;

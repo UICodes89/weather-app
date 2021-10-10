@@ -1,15 +1,15 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Weather from './Weather';
 import renderer from 'react-test-renderer';
 
 test('renders learn react link', () => {
-  render(<App />);
+  render(<Weather />);
 });
 
 
 //snapshot testings
-test('APP Component snapshot', () => {
-  const tree = renderer.create(<App></App>).toJSON();
+test('Weather Component snapshot', () => {
+  const tree = renderer.create(<Weather></Weather>).toJSON();
   expect(tree).toMatchSnapshot()
 })
