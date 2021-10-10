@@ -21,7 +21,7 @@ export default function SearchComponent() {
 			};
 			setResult(response);
 		}).catch((error) => {
-			console.log(new Error(error));
+			console.log("Error occurred: " + error);
 		})
 	};
 	return (
