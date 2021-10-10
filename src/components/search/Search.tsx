@@ -30,7 +30,7 @@ export default function SearchComponent() {
 				<form onSubmit={(event) => onSubmit(event)}>
 					<input type="text" placeholder="Please enter a city name" className="search-field" value={search} onChange={(e) => setSearch(e.target.value)} />
 					<button type="submit" className="search-btn">search</button>
-					<a href="javascript:;" className="location" ></a>
+					<span className="location" title="select location"></span>
 				</form>
 			</div>
 			{Object.keys(result).length ? <Tempture {...result} /> : null}
