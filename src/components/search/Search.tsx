@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../App";
-import { geolocated, geoPropTypes } from "react-geolocated";
+//import { geolocated, geoPropTypes } from "react-geolocated";
 import Tempture from "../tempture/Tempture";
 import axios from "axios";
 
@@ -26,11 +26,11 @@ export default function SearchComponent() {
 	};
 	return (
 		<>
-			<div className="search_container">
+			<div className="search_container" data-value={sampleAppContext}>
 				<form onSubmit={(event) => onSubmit(event)}>
 					<input type="text" placeholder="Please enter a city name" className="search-field" value={search} onChange={(e) => setSearch(e.target.value)} />
 					<button type="submit" className="search-btn">search</button>
-					<a href="#" className="location" ></a>
+					<a href="javascript:;" className="location" ></a>
 				</form>
 			</div>
 			{Object.keys(result).length ? <Tempture {...result} /> : null}
