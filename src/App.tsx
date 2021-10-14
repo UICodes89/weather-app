@@ -25,6 +25,13 @@ function App() {
             <div className="container search-box">
               <h1>Search Weather <span className="text-muted">by <Link to="/city">city</Link> or, <Link to="/geolocation">geolocation</Link>
               </span></h1>
+              <Route
+                exact
+                path="/"
+                render={() => {
+                  return (<Weather />)
+                }}
+              />
               <Route path="/city">
                 <Weather />
               </Route>
