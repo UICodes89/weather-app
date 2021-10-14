@@ -75,6 +75,7 @@ button.search-btn {
 	color: #fff;
 	font-family: inherit;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 form {
 	position: relative;
@@ -98,6 +99,7 @@ h1 {
 	height: 20px;
 	background-size: 100%;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 .search-box {
 	padding: 150px 0;
@@ -133,4 +135,20 @@ h1 {
 h1 span.text-muted {
 	font-size: 14px;
 	display: block;
+}
+
+.errorMessage {
+	color: red;
+	text-align: center;
+	font-family: inherit;
+	font-size: 1em;
+}
+input.lat-field,
+input.long-field {
+	width: 39%;
+	padding: 13px;
+	font-family: inherit;
+	font-size: 16px;
+	outline: none;
+	margin: 0 10px;
 }

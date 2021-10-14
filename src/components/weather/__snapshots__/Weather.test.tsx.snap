@@ -2,16 +2,8 @@
 
 exports[`Weather Component snapshot 1`] = `
 <div
-  className="search-box rainy"
+  className=" rainy"
 >
-  <h1>
-    Search Weather 
-    <span
-      className="text-muted"
-    >
-      by city or, geolocation
-    </span>
-  </h1>
   <div
     className="search_container"
   >
@@ -27,15 +19,20 @@ exports[`Weather Component snapshot 1`] = `
       />
       <button
         className="search-btn"
+        disabled={true}
         type="submit"
       >
         search
       </button>
-      <a
+      <span
         className="location"
-        href="#"
+        onClick={[Function]}
+        title="select location"
       />
     </form>
   </div>
+  <div
+    className="errorMessage"
+  />
 </div>
 `;

@@ -9,8 +9,7 @@ export default function Weather() {
   }
 
   return (
-    <div className={`search-box ${true ? getClass('rainy') : ''}`}>
-      <h1>Search Weather <span className="text-muted">by city or, geolocation</span></h1>
+    <div className={` ${true ? getClass('rainy') : ''}`}>
       <Search />
     </div >
   )

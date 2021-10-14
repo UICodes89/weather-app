@@ -3,47 +3,47 @@
 exports[`APP Component snapshot 1`] = `
 <div
   className="container-fluid"
+  computedMatch={
+    Object {
+      "isExact": true,
+      "params": Object {},
+      "path": "/",
+      "url": "/",
+    }
+  }
+  location={
+    Object {
+      "hash": "",
+      "pathname": "/",
+      "search": "",
+      "state": undefined,
+    }
+  }
 >
   <div
-    className="container"
+    className="container search-box"
   >
-    <div
-      className="search-box rainy"
-    >
-      <h1>
-        Search Weather 
-        <span
-          className="text-muted"
-        >
-          by city or, geolocation
-        </span>
-      </h1>
-      <div
-        className="search_container"
+    <h1>
+      Search Weather 
+      <span
+        className="text-muted"
       >
-        <form
-          onSubmit={[Function]}
+        by 
+        <a
+          href="/city"
+          onClick={[Function]}
         >
-          <input
-            className="search-field"
-            onChange={[Function]}
-            placeholder="Please enter a city name"
-            type="text"
-            value=""
-          />
-          <button
-            className="search-btn"
-            type="submit"
-          >
-            search
-          </button>
-          <a
-            className="location"
-            href="#"
-          />
-        </form>
-      </div>
-    </div>
+          city
+        </a>
+         or, 
+        <a
+          href="/geolocation"
+          onClick={[Function]}
+        >
+          geolocation
+        </a>
+      </span>
+    </h1>
   </div>
 </div>
 `;
