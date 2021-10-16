@@ -89,7 +89,8 @@ async function tempByGeolocation(latitude, longitude) {
 		});
 }
 
-export default {
+const methods = {
 	tempByGeolocation,
 	tempByCity,
 };
+export default methods;
